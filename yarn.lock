@@ -35,13 +35,23 @@
     "@types/node" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.11.1":
-  version "4.17.1"
-  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.1.tgz#4cf7849ae3b47125a567dfee18bfca4254b88c5c"
-  integrity sha512-VfH/XCP0QbQk5B5puLqTLEeFgR8lfCJHZJKkInZ9mkYd+u8byX0kztXEQxEk4wZXJs8HI+7km2ALXjn4YKcX9w==
+"@types/express-serve-static-core@~4.17.7":
+  version "4.17.12"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.12.tgz#9a487da757425e4f267e7d1c5720226af7f89591"
+  integrity sha512-EaEdY+Dty1jEU7U6J4CUWwxL+hyEGMkO5jan5gplfegUgCUsIUWqXxqw47uGjimeT4Qgkz/XUfwoau08+fgvKA==
+  dependencies:
+    "@types/node" "*"
+    "@types/qs" "*"
+    "@types/range-parser" "*"
+
+"@types/express@~4.17.7":
+  version "4.17.8"
+  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.8.tgz#3df4293293317e61c60137d273a2e96cd8d5f27a"
+  integrity sha512-wLhcKh3PMlyA2cNAB9sjM1BntnhPMiM0JOBwPBqttjHev2428MLEB4AYVN+d8s2iyCVZac+o41Pflm/ZH5vLXQ==
   dependencies:
     "@types/body-parser" "*"
     "@types/express-serve-static-core" "*"
+    "@types/qs" "*"
     "@types/serve-static" "*"
 
 "@types/mime@*":
@@ -58,6 +68,11 @@
   version "9.6.52"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.52.tgz#ddba1f1fdaf1487a0a992ee238c43f5318ba5625"
   integrity sha512-d6UdHtc8HKe3NTruj9mHk2B8EiHZyuG/00aYbUedHvy9sBhtLAX1gaxSNgvcheOvIZavvmpJYlwfHjjxlU/Few==
+
+"@types/qs@*":
+  version "6.9.5"
+  resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.5.tgz#434711bdd49eb5ee69d90c1d67c354a9a8ecb18b"
+  integrity sha512-/JHkVHtx/REVG0VVToGRGH2+23hsYLHdyG+GrvoUGlGAd0ErauXDyvHtRI/7H7mzLm+tBCKA7pfcpkQ1lf58iQ==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -87,14 +102,15 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-actions-on-google@^2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/actions-on-google/-/actions-on-google-2.12.0.tgz#6009808d4eb10029a020020c835ab6b8f4f192a5"
-  integrity sha512-D1F3hv3bEztZtUQEghJSqTkwEE2/mWptxOjUdDPqNZ4cj4TnPVZmVcZtmtKE5PtiPjx/oPdcV0yrX2NXTNKgdQ==
+actions-on-google@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/actions-on-google/-/actions-on-google-2.13.0.tgz#845dbe16cc2f8b0a59ddfbba7df82f36e5ae03c9"
+  integrity sha512-Nt6nkaAurayTWDbtvP4k++esQvGVmPOy5y2DsBmM2TXrjU/PW8ZBuDw4MDI2RyJE5gMLejbgGHToxx7SY/Gc5A==
   dependencies:
     "@types/aws-lambda" "^0.0.33"
     "@types/debug" "^0.0.30"
-    "@types/express" "^4.11.1"
+    "@types/express" "~4.17.7"
+    "@types/express-serve-static-core" "~4.17.7"
     "@types/node" "^9.4.6"
     debug "^3.1.0"
     google-auth-library "^1.6.1"
